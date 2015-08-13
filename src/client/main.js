@@ -17,7 +17,10 @@ window.onload = function(){
 		}
 	}
 	else{
-		document.getElementById("main").textContent = "Rock Paper Scissors" ;	
+		document.getElementById("main").innerHTML = 
+			"Welcome to Rock Paper Scissors ! To join or create a room,"+"<br>"
+			+"To join or create a room, go to "+window.location.hostname+"/room/[name of your room] and share the URL with your friends !"
+		;	
 	}
 }
 
