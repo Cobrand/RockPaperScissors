@@ -2,4 +2,112 @@ html, body {
 	margin:0 ;
 	padding:0 ;
 	background-color:black;
+	font-family: "Roboto";
+}
+
+main{
+	text-align: center ;
+	margin:0 auto;
+	padding: 10px;
+	max-width:600px ;
+	min-width:500px ;
+	width:80%;
+	color:white;
+	
+}
+
+#status{
+	font-size:2em;
+}
+
+#history{
+	margin-top:20px;
+	text-align: left;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+#select{
+	margin-top:15px;
+	display: flex;
+}
+
+#select>div{
+	-webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+}
+
+.player{
+	border: solid white 2px;
+	border-radius: 12px;
+	padding:6px 15px;
+	margin:12px ;
+	text-align: left ;
+	font-size: 1.7em;
+}
+
+.player>.username{
+	padding-left: 14px;
+	vertical-align: center;
+}
+
+.player>.status{
+	display: inline-block;
+	float:right;
+	font-weight: 200;
+}
+
+.icon{
+	display: inline-block ;
+	padding: 12px;
+	border-radius: 48px;
+	border: solid white 6px;
+}
+
+.selected{
+	border-color: #444444 !important ;
+}
+
+.icon:hover{
+	cursor: pointer;
+	border-color:#AAAAAA ;
+}
+
+.red .status{
+	color:#FF0000;
+}
+
+.green .status{
+	color:#FFD800;
+}
+
+.grey .status{
+	color:#BBBBBB;
+}
+
+.white .status{
+	color:#FFFFFF;
+}
+
+.red{
+	border-color:#FF0000;
+}
+
+.green{
+	border-color:#FFD800;
+}
+
+.grey{
+	border-color:#BBBBBB;
+}
+
+.white{
+	border-color: white;
+}
+
+.date{
+	margin-left:4px;
+	margin-right:4px;
+	font-weight:700;
 }
