@@ -25,6 +25,15 @@ function deepCopy(o){
 	return JSON.parse(JSON.stringify(o)); // dirty
 }
 
+function cleanRooms(){
+	for (var roomid in rooms){
+		if (rooms[roomid].nbPlayers === 0 && Date.now() - rooms[roomid].history[rooms[roomid].history.length - 1].timestamp > 1800 * 1000 ){
+			console.log("cleaned rooms "+roomid);
+			delete rooms[roomid];
+		}
+	}
+}
+
 function playTurn(roomid){
 	var room = rooms[roomid];
 	var players = {} ;
@@ -213,3 +222,5 @@ io.on('connection', function(socket){
 	});
 	
 });
+
+setInterval(cleanRooms,60000);
