@@ -19,7 +19,7 @@ window.onload = function(){
 	else{
 		document.getElementById("main").innerHTML = 
 			"Welcome to Rock Paper Scissors ! To join or create a room,"+"<br>"
-			+"To join or create a room, go to "+window.location.hostname+"/room/[name of your room] and share the URL with your friends !"
+			+"To join or create a room, go to <i>http://"+window.location.hostname+"/room/[NAMEOFYOURROOM]</i> and share the URL with your friends !"
 		;	
 	}
 }
